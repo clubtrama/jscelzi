@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootcamp - Inscripción</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="colorlib.com">
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="image-holder">
+            <img src="img/bc-logo.png" alt="">
+        </div>
+        <form id="" action="">
+            <div id="wizard">
+                <!-- SECTION 1 -->
+                <h4></h4>
+                <section>
+                    <div class="form-row form-group">
+                        <div class="form-holder">
+                            <label class="title-font" for="">
+								Nombre *
+							</label>
+                            <input model maxlength="100" required-section-0 id="firstName" type="text" class="form-control">
+                        </div>
+                        <div class="form-holder">
+                            <label class="title-font" for="">
+								Apellido *
+							</label>
+                            <input model maxlength="100" required-section-0 id="lastName" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							DNI / ID / Pasaporte *
+						</label>
+                        <input model maxlength="30" required-section-0 id="pasaporterId" type="number" class="form-control">
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Fecha de Nacimiento *
+						</label>
+                        <input model required-section-0 id="bornDate" type="date" class="form-control" placeholder="Street address">
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Pais de Residencia*
+						</label>
+                        <div class="form-holder">
+                            <select required-section-0 model name="" id="countrySelect" class="form-control title-font">
+								<option value="Argentina" selected class="option">Argentina</option>
+								<option value="Bolivia" class="option">Bolivia</option>
+								<option value="Brasil" class="option">Brasil</option>
+								<option value="Chile" class="option">Chile</option>
+								<option value="Colombia" class="option">Colombia</option>
+								<option value="Costa Rica" class="option">Costa Rica</option>
+								<option value="Cuba" class="option">Cuba</option>
+								<option value="Ecuador" class="option">Ecuador</option>
+								<option value="El Salvador" class="option">El Salvador</option>
+								<option value="Guayana Francesa" class="option">Guayana Francesa</option>
+								<option value="Granada" class="option">Granada</option>
+								<option value="Guatemala" class="option">Guatemala</option>
+								<option value="Guayana" class="option">Guayana</option>
+								<option value="Haití" class="option">Haití</option>
+								<option value="Honduras" class="option">Honduras</option>
+								<option value="Jamaica" class="option">Jamaica</option>
+								<option value="México" class="option">México</option>
+								<option value="Nicaragua" class="option">Nicaragua</option>
+								<option value="Paraguay" class="option">Paraguay</option>
+								<option value="Panamá" class="option">Panamá</option>
+								<option value="Perú" class="option">Perú</option>
+								<option value="Puerto Rico" class="option">Puerto Rico</option>
+								<option value="República Dominicana" class="option">República Dominicana</option>
+								<option value="Surinam" class="option">Surinam</option>
+								<option value="Uruguay" class="option">Uruguay</option>
+								<option value="Venezuela" class="option">Venezuela</option>
+							</select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Provincia *
+						</label>
+                        <input maxlength="100" required-section-0 model id="provincia" type="text" class="form-control">
+
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Mail *
+						</label>
+                        <input maxlength="100" required-section-0 model id="mail" type="text" class="form-control" placeholder="ejemplo@trama.com">
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Celular (Código país + Código de área + Número) *
+						</label>
+                        <input maxlength="50" required-section-0 model id="telefono" type="number" class="form-control" placeholder="0054901109874">
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Universidad *
+						</label>
+                        <input maxlength="100" required-section-0 model id="universidad" type="text" class="form-control">
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Carrera *
+						</label>
+                        <input maxlength="100" required-section-0 model id="carrera" type="text" class="form-control">
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Año de cursada *
+						</label>
+                        <input maxlength="100" required-section-0 model id="anioCursada" type="number" class="form-control">
+                    </div>
+                </section>
+
+                <!-- SECTION 2 -->
+                <h4></h4>
+                <section>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							¿Participaste alguna vez del BootCamp? ¿En qué año? *
+						</label>
+                        <input maxlength="3000" model required-section-1 id="participoAntes" type="text" class="form-control">
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							¿Cómo te enteraste del Bootcamp? *
+						</label>
+                        <textarea required-section-1 maxlength="3000" model name="" id="comoConocio" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							Si te enteraste por un embajador, dejanos su nombre y apellido:
+						</label>
+                        <input maxlength="3000" model id="embajadorConocido" type="text" class="form-control">
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							¿Emprendiste alguna vez? ¿Cómo te fue? *
+						</label>
+                        <textarea required-section-1 maxlength="3000" model name="" id="emprendioAntes" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							¿Por qué querés participar del Bootcamp?
+						</label>
+                        <textarea maxlength="3000" model name="" id="porqueParticipar" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							¿Qué esperas que te aporte como experiencia?
+						</label>
+                        <textarea maxlength="3000" model name="" id="experiencia" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							¿Cómo le describirías el ruido del mar a una persona sorda?
+						</label>
+                        <textarea maxlength="3000" model name="" id="ruidoPersonaSorda" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							De la siguiente lista, elegí las 5 temáticas que más te gusten y ordenalas del 1 al 5, siendo 5 la que más te interesa.						</label>
+                    </div>
+
+                    <!-- range-->
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Fintech</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-finTech" class="etiqueta-style"></div>
+                            <input id="finTech" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Inclusión social</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-inclusionSocial" class="etiqueta-style"></div>
+                            <input id="inclusionSocial" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Salud (HealthTech)</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-salud" class="etiqueta-style"></div>
+                            <input id="salud" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Smart Cities</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-smartCities" class="etiqueta-style"></div>
+                            <input id="smartCities" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Inteligencia Artificial</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-inteligenciaArtificial" class="etiqueta-style"></div>
+                            <input id="inteligenciaArtificial" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Educación (EdTech)</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-educacion" class="etiqueta-style"></div>
+                            <input id="educacion" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Energías Renovables</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-energiasRenovables" class="etiqueta-style"></div>
+                            <input id="energiasRenovables" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="title-range form-holder">
+                            <label class="title-font">Tecnologías Exponenciales</label>
+                        </div>
+                        <div class="range-style form-holder">
+                            <div id="etiqueta-tecnologia" class="etiqueta-style"></div>
+                            <input id="tecnologia" model range-tag type="range" min="1" max="5" value="1">
+                        </div>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							Contanos por qué elegiste las que marcaste con 5, 4 y 3. ¿Hay alguna temática que no esté en esta lista y que te interese? *
+						</label>
+                        <textarea required-section-1 maxlength="3000" model name="" id="eleccionTematica" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <h4></h4>
+                <section>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							Si tuvieras la oportunidad de hablar un minuto con una personalidad destacada /
+							emprendedor/a: ¿Quién sería? ¿Qué le preguntarías? ¿Por qué?
+						</label>
+                        <textarea maxlength="3000" model name="" id="personalidadDestacada" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							Si fueses un animal y tuvieses que definirte en un equipo de trabajo : ¿Qué animal serías?
+							¿Por qué? </label>
+                        <textarea maxlength="3000" model name="" id="animal" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							Contanos un poco más sobre vos: ¿Qué te gusta hacer en tu tiempo libre?</label>
+                        <textarea maxlength="3000" model name="" id="sobreVos" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							Contanos algún "dato de color" personal que sea curioso </label>
+                        <textarea maxlength="3000" model name="" id="datoDeColor" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                </section>
+
+
+
+                <!-- SECTION 4 -->
+                <h4></h4>
+                <section>
+                    <div class="form-row">
+                        <p class="content-font">BC-Xtreme es una experiencia complementaria al BootCamp en la que 25 jóvenes de todo el país tienen la oportunidad de recorrer tanto empresas líderes e innovadoras, como startups emergentes. Dos días antes del BootCamp vas a poder
+                            sumergirte en el ecosistema emprendedor de Buenos Aires e inspirarte con líderes de distintas áreas.</p>
+                        <br>
+                        <p class="content-font">Si no vivís en Capital Federal o GBA, el hotel estará incluido. ¡Sé parte de esta experiencia!
+                        </p>
+                        <br>
+                        <p class="content-font">* Es obligatorio ser participante del BootCamp para participar de esta experiencia.</p>
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							¿Querés ser parte de BC-Xtreme?
+						</label>
+                        <div class="form-holder">
+                            <select model name="" id="bcXtremeSelect" class="form-control">
+								<option value="" class="option" selected></option>
+								<option value="si" class="option">Si!</option>
+								<option value="no" class="option">No :(</option>
+								<option value="tal_vez" class="option">Tal Vez</option>
+							</select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							¿Qué empresa/startup te gustaría visitar?</label>
+                        <textarea maxlength="3000" model name="" id="visitaEmpresa" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label class="title-font" for="">
+							¿Querés aplicar al programa de becas para el traslado a CABA?
+						</label>
+                        <div class="form-holder">
+                            <select model name="" id="becasSelect" class="form-control">
+								<option value="" class="option" selected></option>
+								<option value="si" class="option">Si!</option>
+								<option value="no" class="option">No</option>
+							</select>
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-row" style="margin-bottom: 18px">
+                        <label class="title-font" for="">
+							¿Cómo crees que podés cambiar tu entorno si participás en el BC Xtreme?</label>
+                        <textarea maxlength="3000" model name="" id="cambiarEntorno" class="form-control" placeholder="" style="height: 80px"></textarea>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JQUERY STEP -->
+    <script src="js/jquery.steps.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <!-- Template created and distributed by Colorlib -->
+
+    <script src="js/sign-up.js"></script>
+</body>
+<!-- Modal de exito -->
+<div id="succesModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="text-center">
+                    <h3>¡Felicitaciones!</h3>
+                </div>
+            </div>
+            <div class="modal-body text-center">
+                <h4>¡Su solicitud fue enviada con éxito!</h4>
+                <p id="error">Próximamente nos estaremos comunicando.</p>
+                <a id="redirectModal" class="btn btn-success" data-dismiss="modal">Cerrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal de error -->
+<div id="errorModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="text-center">
+                    <h3>Ocurrio un error inesperado :(</h3>
+                </div>
+            </div>
+            <div class="modal-body text-center">
+                <h4>Por favor, vuelva a intentarlo</h4>
+                <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</html>
